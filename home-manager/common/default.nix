@@ -11,7 +11,9 @@
     ./imv.nix
     ./nix.nix
     ./packages.nix
-    ./udiskie.nix
+    ./ssh.nix
+    ./tmux.nix
     ./xdg.nix
+    ./ydotool.nix
   ];
 }

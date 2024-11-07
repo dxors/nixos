@@ -9,7 +9,6 @@ let
 in
   {
   imports = [
-    ./apps
     ./common
     ./sway
     inputs.catppuccin.homeManagerModules.catppuccin
@@ -22,7 +21,7 @@ in
 
   sops = {
     age.keyFile = "${config.home.homeDirectory}/.config/sops/age/keys.txt";
-    defaultSopsFile = "${secretspath}/laptop/secrets.yaml";
+    defaultSopsFile = "${secretspath}/office/secrets.yaml";
   };
 
   # This value determines the Home Manager release that your
@@ -33,5 +32,5 @@ in
   # You can update Home Manager without changing this value. See
   # the Home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
 }

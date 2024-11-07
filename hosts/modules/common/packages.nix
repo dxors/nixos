@@ -12,10 +12,13 @@
     git
     jq
     nix-tree
+    python3
     ranger
     ripgrep
     rsync
-    helix
+    screen
+    tmux
+    vim
     wget
   ];
 } 

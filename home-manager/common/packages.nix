@@ -1,37 +1,31 @@
+{ inputs, pkgs, ... }:
 {
-  inputs,
-  pkgs,
-  ...
-}: {
   home.packages = with pkgs; [
-    # Terminal tools
+    # Terminal tools  
     atool
     bottom
     dua
+    eternal-terminal
     fd
     ripgrep
     stow
-    udiskie
     unzip
     # Terminal applications
-    bitwarden-cli
     home-manager
-    mediainfo
     ranger
-    tabview
-    helix
+    vim-full # TODO
     # Development tools
+    alejandra
+    highlight
     tig
     # Gui applications
     alacritty
-    inputs.bwm.packages.${pkgs.system}.default
     dmenu
-    brave
+    gnome.simple-scan
     imv
-    libreoffice
     mpv
     pinentry-qt
-    inputs.urlscan.packages.${pkgs.system}.default
+    ungoogled-chromium
     wl-clipboard
     zathura
   ];

@@ -3,6 +3,7 @@
   lib,
   ...
 }:{
+  # Systemd-boot Configuration with plymouth and ZFS
   boot = {
     consoleLogLevel = 0;
     kernelParams = ["quiet" "udev.log_level=3"];
@@ -22,8 +23,14 @@
         canTouchEfiVariables = true;
       };
     };
-    plymouth = lib.mkIf (config.networking.hostName == "extensa") {
+    plymouth = lib.mkIf (config.networking.hostName == "laptop") {
       enable = true;
+    };
+    supportedFilesystems = ["zfs"];
+    zfs = {
+      requestEncryptionCredentials = true;
+      forceImportRoot = false;
+      devNodes = "/dev";
     };
   };
 }

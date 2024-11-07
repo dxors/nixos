@@ -29,12 +29,12 @@
     system = "x86_64-linux";
   in {
     nixosConfigurations = {
-      extensa = nixpkgs.lib.nixosSystem {
+      laptop = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs outputs;
         };
         modules = [
-          ./hosts/extensa/configuration.nix
+          ./hosts/laptop/configuration.nix
         ];
       };
     };

@@ -1,7 +1,7 @@
 {
   users.users.root = {
     ## hash: mkpasswd -m SHA-512 -s
-    initialHashedPassword = "$6$tkcT0WrRFX8pn81y$tgHFCYdtzjvSv5V3tYYy3.Rjbzdkb1/uSNRlYcO6AJaw3vtGY2G.N3GSdjOEqdtwc/yy1oKOalFUgcNQNuQW51";
+    initialHashedPassword = "$6$QYLETBTGd21apfXW$xJu/rrNLA3XjfpV5CMhHnPnXokpdOzfczmQKTDiO3MyIKBY49l20hJhwekGXQtqx9AWp9elhk.hQ0LOgHLn0w.";
   };
 
   # Normal user
@@ -11,9 +11,9 @@
     extraGroups = ["wheel" "networkmanager"];
     uid = 1000;
     # initial password
-    initialHashedPassword = "$6$tkcT0WrRFX8pn81y$tgHFCYdtzjvSv5V3tYYy3.Rjbzdkb1/uSNRlYcO6AJaw3vtGY2G.N3GSdjOEqdtwc/yy1oKOalFUgcNQNuQW51";
+    initialHashedPassword = "$6$QYLETBTGd21apfXW$xJu/rrNLA3XjfpV5CMhHnPnXokpdOzfczmQKTDiO3MyIKBY49l20hJhwekGXQtqx9AWp9elhk.hQ0LOgHLn0w.";
   };
-  users.groups.xors = {
+  users.groups.firecat53 = {
     gid = 1000;
   };
 }
